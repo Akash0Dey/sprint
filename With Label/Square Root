@@ -1,0 +1,21 @@
+3 start num:635 div:0 frac:0 sq:0 rem:0 doublediv:0 hundred:100
+start:1 sq div sq
+2 num sq rem
+5 rem one stop
+one:1 div div doublediv
+5 doublediv rem yes1
+no1:2 rem one rem
+1 frac hundred frac
+5 rem one yes2
+3 no1
+yes1:1 sq div sq
+1 div one div
+3 start
+yes2:1 doublediv one doublediv
+7 frac rem
+2 frac frac frac
+no3:2 rem doublediv rem
+1 frac one frac
+5 rem doublediv stop
+3 no3
+stop:9

@@ -1,0 +1,15 @@
+3 6 first_element_location:rstart length:0 result:0 3 start copylength:0
+start:7 length copylength
+7 first_element_location check1
+one:1 check1 length check2
+two:2 check2 one check2
+loopstart:5 copylength two palindrome
+4 check1:0 check2:0 again
+notpalindrome:7 one result
+9
+again:1 check1 one check1
+2 check2 one check2
+2 copylength two copylength
+3 loopstart
+palindrome:7 two result 9
+rstart:

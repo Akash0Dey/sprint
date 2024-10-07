@@ -1,0 +1,15 @@
+3 5 first_element_location:100 n:0 3 start slast:0 last:1 copyn:0
+start:7 n copyn
+5 copyn one stop
+7 first_element_location first
+7 slast first:0 
+7 first next
+loop:5 one copyn needmore
+stop:9
+one:1
+needmore:1 slast last last
+2 last slast slast
+2 copyn one copyn
+1 next one next
+7 slast next:0
+3 loop

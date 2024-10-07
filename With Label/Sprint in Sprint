@@ -1,0 +1,96 @@
+3 start curser:1 put:0 add:1 sub:2 jump:3 jumpifeq:4 jumpifless:5 copy:7 stop:9 inst:0 one:1 two:2 three:3 four:4
+value:0
+
+
+start:0 end end
+1 curser end curser
+
+
+cond:2 cellno cellno cellno
+1 cellno curser cellno
+7 cellno:0 inst
+
+4 inst put putcond
+
+4 inst add addsubcond
+
+4 inst sub addsubcond
+
+4 inst jump jumpcond
+
+4 inst jumpifeq jumpifcond
+
+4 inst jumpifless jumpifcond
+
+4 inst copy copycond
+
+4 inst stop stop
+
+3 curser
+
+
+addsubcond:1 curser one curser
+7 curser astemp1
+1 end astemp1:0 AS1st
+1 curser one curser
+7 curser astemp2
+1 end astemp2:0 AS2nd
+1 curser one curser
+7 curser astemp3
+1 end astemp3:0 AS3rd
+4 inst add adding
+subing:7 sub asop
+3 asop
+adding:7 add asop
+asop:1 AS1st:0 AS2nd:0 AS3rd:0
+1 curser one curser
+3 cond
+
+
+jumpcond:1 curser one curser
+7 curser jump1st
+1 end jump1st:0 curser
+3 cond
+
+
+jumpifcond:1 curser one curser
+7 curser jiftemp1
+1 end jiftemp1:0 jif1st
+1 curser one curser
+7 curser jiftemp2
+1 end jiftemp2:0 jif2nd
+4 inst jumpifeq ifeq
+ifless:7 jumpifless eqlessop
+3 eqlessop
+ifeq:7 jumpifeq eqlessop
+eqlessop:4 jif1st:0 jif2nd:0 jumpcond
+1 curser one curser
+1 curser one curser
+3 cond
+
+
+copycond:1 curser one curser
+7 curser mtemp1
+1 end mtemp1:0 m1st
+1 curser one curser
+7 curser mtemp2
+1 end mtemp2:0 m2nd
+1 curser one curser
+7 m1st:0 m2nd:0 
+3 cond
+
+
+putcond:1 curser one curser
+7 curser ptemp1
+7 ptemp1:0 p1st
+1 curser one curser
+7 curser ptemp2
+1 end ptemp2:0 p2nd
+1 curser one curser
+0 p1st:0 p2nd:0 
+3 cond
+
+
+end:9
+
+4 2 5 6 2 7 11 5 3 1 9

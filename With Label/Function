@@ -1,0 +1,64 @@
+1 return startingOfProgram return 
+3 startingOfProgram:start a:2 b:0 return:0 result:0 inst:0 one:1 two:2 zero:0
+
+a1:9 b1:100 c1:310
+
+
+returnTo:7 return where
+3 where:0
+
+
+add:1 return two return
+7 return add1
+7 add1:0 adding1
+1 return one return
+7 return add2
+7 add2:0 adding2
+1 return one return
+7 return add3
+7 add3:0 adding3
+1 return one return
+1 adding1:0 adding2:0 adding3:0
+3 returnTo
+
+
+sub:1 return two return
+7 return sub1
+7 sub1:0 subing1
+1 return one return
+7 return sub2
+7 sub2:0 subing2
+1 return one return
+7 return sub3
+7 sub3:0 subing3
+1 return one return
+2 subing1:0 subing2:0 subing3:0
+3 returnTo
+
+
+mul:1 return two return
+7 return mul1
+7 mul1:0 mul11
+7 mul11:0 multiple1
+1 return one return
+7 return mul2
+7 mul2:0  mul12
+7 mul12:0 multiple2
+1 return one return
+7 return mul3
+7 mul3:0 multiple3
+1 return one return
+mulloop:4 multiple2 zero loopend
+1 multiple1 mulresult mulresult
+2 multiple2 one multiple2
+3 mulloop 
+loopend:7 mulresult multiple3:0
+3 returnTo
+multiple1:0 
+multiple2:0 
+mulresult:0
+
+
+start:3 add a b result
+3 mul a b a
+9
